@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smoothie Ordering System</h1>
+        <form id="smoothie-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="flavor">Flavor:</label>
+            <select id="flavor" name="flavor" required>
+                <option value="">Select a flavor</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+                <option value="blueberry">Blueberry</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="chocolate">Chocolate</option>
+            </select>
+
+            <fieldset>
+                <legend>Extras:</legend>
+                <label><input type="checkbox" name="extras" value="Almonds"> Almonds</label>
+                <label><input type="checkbox" name="extras" value="Coconut Flakes"> Coconut Flakes</label>
+                <label><input type="checkbox" name="extras" value="Avocado"> Avocado</label>
+                <label><input type="checkbox" name="extras" value="Greek Yogurt"> Greek Yogurt</label>
+                <label><input type="checkbox" name="extras" value="Mint Leaves"> Mint Leaves</label>
+                <label><input type="checkbox" name="extras" value="Matcha Powder"> Matcha Powder</label>
+            </fieldset>
+
+            <label for="tip">Tip:</label>
+            <input type="number" id="tip" name="tip" step="0.01" min="0" placeholder="0.00">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional comments?"></textarea>
+
+            <button type="button" id="order-button">Place Order</button>
+            <button type="button" id="cancel-button">Cancel Order</button>
+        </form>
+
+        <div id="order-summary"></div>
+        <div id="order-status" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

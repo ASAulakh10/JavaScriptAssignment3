@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    padding: 20px;
+}
+
+.container {
+    height: 95%;
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ff6f61; 
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    color: #4a90e2; 
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff6f61; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+button:hover {
+    background-color: #e55e4e;
+}
+
+#order-summary {
+    background: #f0f4f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333; 
+}
+
+#order-summary h2 {
+    color: #ff6f61; 
+    font-size: 2em;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+#order-summary p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#order-summary strong {
+    color: #333; 
+}
+
+#order-status {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #ffffff; 
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.order-in-progress {
+    background-color: #fbc2eb; 
+}
+
+.order-canceled {
+    background-color: #ff6f61; 
+}
+
+.hidden {
+    display: none;
+}
